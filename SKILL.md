@@ -5,11 +5,12 @@ compatibility: Python 3.9+ - no external dependencies (stdlib only) - network ac
 metadata:
   {
     "openclaw": {
-      "emoji": "📧",
-      "requires": { "env": ["MAIL_USER", "MAIL_APP_KEY", "MAIL_SMTP_HOST", "MAIL_IMAP_HOST"] },
-      "primaryEnv": "MAIL_APP_KEY"
+      "emoji": "📧"
     }
   }
+readinessCheck:
+  path: ~/.openclaw/secrets/mail_creds
+  description: "Credentials file for IMAP/SMTP (env vars also supported)"
 ontology:
   reads: [emails]
   writes: [emails, flags]
