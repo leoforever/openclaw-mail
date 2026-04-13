@@ -1,0 +1,11 @@
+{
+  "smtp_port": 465,
+  "imap_port": 993,
+  "mail_from": "loongsoncloud@sina.com",
+  "default_folder": "INBOX",
+  "max_results": 20,
+  "allow_send": true,
+  "allow_read": true,
+  "allow_search": true,
+  "allow_delete": false
+}
